@@ -1,12 +1,17 @@
-let n1 = []
-let contador =0
-function adiciona(){
-let item = document.getElementById("input1").value
-n1[contador] = item
-contador +=1
+ let vet = []
 
-document.getElementById("input1").value = ""
+ function adiciona(){
+     let item = document.getElementById("input1").value
+     vet.push(item)
 
-document.getElementById("tela").innerText = n1
+     limpar()
+     imprimir()
+ }
 
-}
+ function limpar(){
+     document.getElementById("input1").value = ""
+ }
+
+ function imprimir(){
+     document.getElementById("tela").innerText = vet.join(" - ")
+ }
