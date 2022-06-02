@@ -1,24 +1,38 @@
 <html>
-    <head>
-        <title>loja do thur</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="estilo.css">
-        <script src="script.js"></script>
 
-    </head>
-    <body>
-        
-        <div class="fundo">
-            <h1>faça sua compra!</h1>
-            <input type="text" placeholder="Digite a sua compra" id="input1">
+<head>
+    <title>loja do thur</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
 
+</head>
+
+<body>
+
+    <div class="fundo">
+        <h1>Faça sua Lista</h1>
+        <input type="text" placeholder="Digite o Produto" id="input1">
+        <div class="botao1">
             <button type="button" onclick="adiciona()">adicionar</button>
         </div>
 
-        <div class="fundo1">
+        <fieldset>
+            <legend>REMOVER</legend>
+            <input placeholder="Produto a Remover" type="text" id="remover">
+            <div class="botao2">
+                <button type="button" onclick="remover()">remover</button>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="fundo1">
+        <div class="tela2">
             <span id="tela"></span>
         </div>
-        
-    </body>
+    </div>
+
+
+</body>
 
 </html>
